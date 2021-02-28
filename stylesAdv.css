@@ -1,0 +1,297 @@
+/* Logo on the top left corner */
+.mainLogoAdvance {
+    float: left;
+    width: 400px;
+    text-align: left;
+    height: 63px;
+    background: #f1f1f1;
+}
+
+/* flex container for rightside Link */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f1f1;    
+    justify-content: flex-end;
+    height: 49px;
+}
+
+/* rightside link */
+.flex-container > div {
+    background-color: #f1f1f1;    
+}
+
+/* top padding for link */
+.linkARight {
+    padding-top: 10px;
+}
+
+/* Advance Button placement setting */
+.button-advance-placement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* alignment of the button */
+.adv-button-align {
+    text-align:right;
+    width: 50%; 
+    margin-top: 10px;
+}
+
+/* button option */
+.button-option {
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    user-select:none;
+    line-height:100%;
+    height:30px;
+    min-width:120px;
+}
+
+/* when button gets focus */
+.button-option:focus {
+    box-shadow:inset 0 0 0 1px #fff;
+    border:1px solid #fff;
+    border:rgba(0,0,0,0) solid 1px;
+    outline:1px solid #4d90fe;
+    outline:rgba(0,0,0,0) 0
+}
+
+/* button itself */
+.adv-Search-button {    
+    border-radius:2px;    
+    font-size:11px;
+    font-weight:bold;
+    text-align:center;  
+    white-space: nowrap;  
+    height:27px;
+    line-height:27px;
+    min-width:54px;
+    padding:0 8px;    
+}
+
+/* when user bring mouse pointer over the button */
+.adv-Search-button:hover {
+    background-color:#357ae8;
+    background-image: linear-gradient(top,#4787ed,#3d75cf);
+    border:1px solid #2b2929;
+    color: #fff;
+}
+
+/* Input where search text is entered by user */
+.adv-textinput {
+    border-radius:1px;
+    border:1px solid #d9d9d9;
+    border-top:1px solid #c0c0c0;
+    font-size:13px;
+    height:25px;
+    padding:1px 8px
+}
+
+/* when text input gets focus */
+.adv-textinput:focus {
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);
+    border:1px solid #4d90fe;
+    outline:none
+}
+
+/* defult start setting */
+html,body,div,span,a,form,label {
+    margin:0;
+    padding:0;
+    border:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    text-decoration:none
+}
+
+/* main area which have all the search text fields */
+.adv-Text {
+    color:#d93025;
+    font-size:20px;
+    margin:25px 35px;
+    width: 168px;
+}
+
+/* top line just below the words Advance Search in red */
+.top-Line {
+    border-bottom:1px solid #ebebeb
+}
+
+/* padding for text input field */
+.adv-Search-Text-Input-PlaceHolder {
+    padding-right:16px
+}
+
+/* dimentions of search text area */
+.adv-Search-Options {
+    max-width:1120px;
+    min-width:200px;
+    width:96%;
+    margin:40px 2% 0 45px
+}
+
+/* this is the area which has text input, label of text input and example of text input */
+.search-Option-Line {
+    width:100%;
+    clear:both;
+}
+
+/* it is the dive which contains text input, label, example */
+.search-Option-Line .adv-Search-Text-Line-Setting {
+    clear:both
+}
+
+/* div which is only used for heading */
+.search-Option-Line .adv-Search-heading {
+    float:left;
+    display:inline-block;
+    min-width:167px;
+    width:16%;
+    font-size:16px;
+    min-height:42px;
+    font-weight:500;
+    color:#333;
+    vertical-align:middle
+}
+
+.search-Option-Line .adv-Search-Center-BlankSpace {
+    float:left;
+    display:inline-block;
+    min-width:167px;
+    min-height:41px;
+    vertical-align:middle;
+    width:50%
+}
+
+.search-Option-Line .adv-Search-Example-Heading {
+    float:left;
+    display:inline-block;
+    width:33%;
+    font-size:13px;
+    font-weight:700;
+    color:#777;
+    padding-left:5px;
+    vertical-align:middle
+}
+
+/* setting the label of text input */
+.search-Option-Line .adv-Search-Text-Type {
+    float:left;
+    display:inline-block;
+    min-width:167px;
+    width:16%;
+    min-height:42px;
+    color:#222;
+    font-size:13px;
+    line-height:16px;
+    vertical-align:middle
+}
+
+/* setting up text input */
+.search-Option-Line .adv-Search-Text-Input {
+    float:left;
+    display:inline-block;
+    min-width:167px;
+    min-height:41px;
+    vertical-align:middle;
+    width:50%
+}
+
+/* right side of textinput example */
+.search-Option-Line .adv-Search-Example {
+    float:left;
+    display:inline-block;
+    width:32%;
+    min-width:160px;
+    margin:0 0 8px 1%;
+    color:#555;
+    font-size:11px;
+    padding-left:5px;
+    vertical-align:middle;
+    position:relative
+}
+
+/* setting of label and example text */
+.line-text {
+    height:30px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align: left;
+}
+
+/* textinput size */
+.search-Option-Line .adv-Search-Text-Input input[type="text"] {
+    width:100%;
+    text-align:left
+}
+
+/* selected option os textinput */
+.search-Option-Line .adv-Search-Text-Input select {
+    width:100%;
+    height:29px;
+    font-weight:700;
+    font-size:11px;
+    background-color:#eee;
+    line-height:27px;
+    padding-left:4px;
+    color:#333;
+    border:1px solid #d9d9d9;
+    border-top:1px solid #c0c0c0;
+    display:inline-block;
+    vertical-align:top;
+    padding-left:2px;
+    box-sizing:border-box;
+    border-radius:1px
+}
+
+/* setting of example */
+.search-Option-Line .adv-Search-Example .line-Text-Light {
+    color:#666;
+    font-family:monospace;
+    font-size:11px;
+    white-space:pre
+}
+
+/* last line under advance button */
+.end-Line {
+    margin:18px 0;
+    clear:both;
+    border-top:1px solid #ebebeb
+}
+
+/* padding for button */
+.button-option { 
+    padding:0 12px
+}
+
+/* placement setting */
+.search-Option-Line .adv-Search-Text-Line-Setting .button-option {
+    float:right;
+    margin:10px 0
+}
+
+/* media setting will change display when screen is equal or less then 1020px width wise */
+@media (max-width: 1020px) {
+    .adv-Search-Example-Heading {
+        display:none !important
+    }
+    .adv-Search-Example {
+        display:none !important
+    }
+}
+
+/* settinh up div min hight and margin which has all the button and textinput */
+.adv-Search {
+    min-height:100%;
+    margin:0 auto -60px
+}

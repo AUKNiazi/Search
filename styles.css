@@ -1,0 +1,169 @@
+/* setting the html area height */
+html {
+    height:100%
+}
+
+/* body setting */
+body {
+    font-family:arial,sans-serif;
+    min-height:100%;
+    position:relative
+} 
+
+/* div text alignment */
+div {
+    text-align:center;
+}
+
+/* padding for top right link area */
+.menu {
+    padding: 13px 50px 1px 10px;    
+}
+
+/* text setting for links */
+.links {
+    text-align: right;
+}
+
+/* making the links black and not the default */
+.linkA, .lineText {
+    color: black;
+    text-decoration: none;
+    font: 13px Roboto,RobotoDraft,Arial,sans-serif;
+}
+
+/* when mouse is over links it will underline the text */
+.linkA:hover {
+    text-decoration: underline;
+}
+
+/* logo setting on the page */
+.mainLogo {
+    margin-top:auto;
+    padding-top: 20px;
+    max-height:100%;
+    max-width:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    width:auto;
+}
+
+/* textinput holder */
+.searchBarDisplay {
+    position:relative;    
+    max-width:584px;
+    background:#fff;
+    display:flex;
+    border:1px solid #dfe1e5;
+    box-shadow:none;
+    border-radius:30px;
+    z-index:3;
+    height:44px;
+    margin:0 auto;    
+    width:auto;
+}
+
+/* when mouse hover over textinput box */
+.searchBarDisplay:hover {
+    box-shadow:0 1px 6px rgba(32,33,36,.28);
+    border-color:rgba(223,225,229,0);
+}
+
+/* containor setting */
+.searchBoxContainor {
+    flex:1;
+    display:flex;
+    padding:5px 29px 0 29px;
+}
+
+/* text input itself */
+.textInput {
+    display:flex;
+    flex:1;
+    flex-wrap:wrap;
+}
+
+.textPlacement {
+    color:transparent;
+    flex:100%;
+    white-space:pre;
+    height:34px;
+}
+
+.textBox {
+    background-color:transparent;
+    border:none;
+    margin:0;
+    padding:0;
+    color:rgba(0,0,0,.87);
+    outline:none;
+    display:flex;
+    flex:100%;
+    -webkit-tap-highlight-color:transparent;
+    margin-top:-37px;
+    height:34px;
+    font-size:16px;
+}
+
+/* button size */
+.buttons {
+    height:70px;
+}
+
+/* appearance of buttons */
+.buttons input[type="submit"],
+.buttonFace {
+    background-color:#f8f9fa;
+    border:1px solid #f8f9fa;
+    border-radius:8px;
+    color:#3c4043;
+    font-family:arial,sans-serif;font-size:14px;
+    margin:11px 4px;
+    padding:0 16px;
+    line-height:27px;
+    height:36px;
+    min-width:54px;
+    text-align:center;
+    cursor:pointer;
+    user-select:none;
+}
+    
+/* when mouse is over buttons */
+.buttons input[type="submit"]:hover {
+    box-shadow:0 1px 1px rgba(0,0,0,.1);
+    background-color:#f8f9fa;
+    border:1px solid #dadce0;
+    color:#202124;
+}
+
+/* when button get focus */
+.buttons input[type="submit"]:focus {
+    border:1px solid #4d90fe;
+    outline:none;
+}
+
+/* footer */
+.textLine {
+    display: block;
+    position: fixed;    
+    bottom: 0;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);    
+}
+
+/* footer should not get underlined */
+.lineText {
+    text-decoration: none !important;
+}
+
+/* word image in blue just below right corner of logo in image search*/
+.logo-subtext {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: relative;
+    top: -35px;
+    white-space: nowrap;
+}

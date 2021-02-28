@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google Search</title>
+        <!-- Loading stylesheet -->
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body>        
+        <!-- Top right side links for Advance Search and Image search -->
+        <div class="menu">
+            <div class="links">
+                <a class="linkA" href="advance.html" target="_top">Google Advanced Search</a>                                
+                <a class="linkA" href="imageSearch.html" target="_top" style = "margin-left: 10px">Google Images Search</a>
+            </div>
+        </div>       
+        <!-- Main Logo -->
+        <div>
+            <img class="mainLogo" alt="Asmat_Google_Copy" src="logo.png">
+        </div>
+        <!-- Search Text entry field -->
         <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <div>
+                <div class="searchBarDisplay">
+                    <div class="searchBoxContainor">
+                        <div class="textInput">
+                            <div class="textPlacement"></div>
+                            <input class="textBox" name="q" type="text" autocomplete="off" title="Google Search" value="" aria-label="Google Search">
+                        </div>
+                    </div>
+                </div>
+                <br>                                  
+            </div>
+            <!-- Buttons -->
+            <div class="buttons">                       
+                <input  value="Google Search" aria-label="Google Search" name="btnK" type="submit"> 
+                <input  value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit">   
+            </div> 
         </form>
+        <!-- Footer -->
+        <div class="textLine">
+           <p class="lineText"><b> Powered By Google Search </b></p> 
+        </div>          
     </body>
 </html>
